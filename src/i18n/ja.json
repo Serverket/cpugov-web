@@ -1,0 +1,83 @@
+{
+    "nav": {
+        "features": "機能",
+        "download": "ダウンロード",
+        "install": "インストール",
+        "github": "GitHub"
+    },
+    "hero": {
+        "badge": "Flathubで公開中",
+        "title": "CPUの",
+        "titleHighlight": "パワーを制御",
+        "subtitle": "CPUの周波数スケーリングガバナーを監視・切り替えする、モダンなGTK4ユーティリティ。高速・安全・美しい。",
+        "downloadFlathub": "Flathubで入手",
+        "viewSource": "ソースを見る"
+    },
+    "features": {
+        "title": "必要な機能がすべて",
+        "subtitle": "モダンなLinuxデスクトップのための完全なCPU管理体験。",
+        "items": [
+            {
+                "icon": "Zap",
+                "title": "瞬時切り替え",
+                "desc": "パフォーマンス・省電力などのガバナーをワンクリックで切り替え。"
+            },
+            {
+                "icon": "Activity",
+                "title": "リアルタイム監視",
+                "desc": "全コアの周波数をリアルタイムで確認。"
+            },
+            {
+                "icon": "ShieldCheck",
+                "title": "セキュアな設計",
+                "desc": "Polkit認証でGUIがrootとして実行されない安全な設計。"
+            },
+            {
+                "icon": "Palette",
+                "title": "モダンなUI",
+                "desc": "GTK4 + libadwaitaで構築したネイティブGNOMEエクスペリエンス。"
+            },
+            {
+                "icon": "Globe",
+                "title": "多言語対応",
+                "desc": "英語・スペイン語・ポルトガル語・日本語・中国語・イタリア語に対応。"
+            },
+            {
+                "icon": "RefreshCw",
+                "title": "設定の永続化",
+                "desc": "選択したガバナーが起動時に自動的に復元されます。"
+            }
+        ]
+    },
+    "download": {
+        "title": "CPU Governorを入手",
+        "subtitle": "FlathubとGitHubでオープンソースとして公開中。",
+        "flathub": "Flathubからインストール",
+        "flathubSub": "最も簡単な方法 — 汎用Linuxパッケージ",
+        "deb": ".debをダウンロード",
+        "debSub": "Debian・Ubuntu・Parrot OSなど向け",
+        "source": "ソースからビルド",
+        "sourceSub": "Mesonを使用",
+        "requirements": "このアプリはホストシステムにcpugov-daemonのインストールが必要です。詳細はREADMEをご覧ください。"
+    },
+    "install": {
+        "title": "インストールガイド",
+        "subtitle": "CPU Governorを1分以内に起動します。",
+        "step1": "1. ホストデーモンのインストール (必須)",
+        "step1Desc": "GUIをrootとして実行せずに安全にハードウェア設定を適用するため、Polkitで保護されたシステムデーモンが必要です。",
+        "step2": "2. アプリのインストール (Flatpak)",
+        "step2Desc": "すべてのLinuxディストリビューションで推奨されるインストール方法です。",
+        "step3": "代替方法: Debian / Ubuntu (.deb)",
+        "step3Desc": "Debian系向けのネイティブパッケージです。最新の.debをダウンロードし、APT経由でインストールします。"
+    },
+    "footer": {
+        "madeWith": "作成",
+        "by": "by",
+        "rights": "GPL-3.0ライセンス",
+        "links": {
+            "flathub": "Flathub",
+            "github": "GitHub",
+            "issues": "バグ報告"
+        }
+    }
+}

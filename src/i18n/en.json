@@ -1,0 +1,83 @@
+{
+    "nav": {
+        "features": "Features",
+        "download": "Download",
+        "install": "Install",
+        "github": "GitHub"
+    },
+    "hero": {
+        "badge": "Now Available on Flathub",
+        "title": "Control Your",
+        "titleHighlight": "CPU Power",
+        "subtitle": "A modern GTK4 utility to monitor and switch CPU frequency scaling governors — fast, secure, and beautiful.",
+        "downloadFlathub": "Get on Flathub",
+        "viewSource": "View Source"
+    },
+    "features": {
+        "title": "Everything You Need",
+        "subtitle": "A complete CPU management experience built for the modern Linux desktop.",
+        "items": [
+            {
+                "icon": "Zap",
+                "title": "Instant Switching",
+                "desc": "Switch between Performance, Powersave, and other governors instantly with one click."
+            },
+            {
+                "icon": "Activity",
+                "title": "Real-Time Monitoring",
+                "desc": "Watch live per-core CPU frequencies across all cores in real time."
+            },
+            {
+                "icon": "ShieldCheck",
+                "title": "Secure by Design",
+                "desc": "Polkit authentication ensures the GUI never runs as root. Safe and standards-compliant."
+            },
+            {
+                "icon": "Palette",
+                "title": "Modern Interface",
+                "desc": "Built with GTK4 + libadwaita for a native GNOME experience that feels right at home."
+            },
+            {
+                "icon": "Globe",
+                "title": "Multilanguage",
+                "desc": "Available in English, Spanish, Portuguese, Japanese, Chinese, and Italian."
+            },
+            {
+                "icon": "RefreshCw",
+                "title": "Persistent Settings",
+                "desc": "Your preferred governor is remembered and restored automatically on every boot."
+            }
+        ]
+    },
+    "download": {
+        "title": "Get CPU Governor",
+        "subtitle": "Available on Flathub and as open source on GitHub.",
+        "flathub": "Install from Flathub",
+        "flathubSub": "The easiest way — universal Linux package",
+        "deb": "Download .deb",
+        "debSub": "For Debian, Ubuntu, Parrot OS and more",
+        "source": "Build from Source",
+        "sourceSub": "via Meson",
+        "requirements": "Requires cpugov-daemon installed on host. See README for instructions."
+    },
+    "install": {
+        "title": "Installation Guide",
+        "subtitle": "Get CPU Governor running in under a minute.",
+        "step1": "1. Install Host Daemon (Required)",
+        "step1Desc": "CPU Governor requires a Polkit-secured system daemon to apply hardware changes safely without running the GUI as root.",
+        "step2": "2. Install App (Flatpak)",
+        "step2Desc": "The recommended way to install CPU Governor on any Linux distribution.",
+        "step3": "Alternative: Debian / Ubuntu (.deb)",
+        "step3Desc": "Native package for Debian-based distributions. Download the latest .deb release and install it via APT."
+    },
+    "footer": {
+        "madeWith": "Made with",
+        "by": "by",
+        "rights": "GPL-3.0 License",
+        "links": {
+            "flathub": "Flathub",
+            "github": "GitHub",
+            "issues": "Report Issue"
+        }
+    }
+}

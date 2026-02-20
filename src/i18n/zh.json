@@ -1,0 +1,83 @@
+{
+    "nav": {
+        "features": "功能",
+        "download": "下载",
+        "install": "安装",
+        "github": "GitHub"
+    },
+    "hero": {
+        "badge": "现已在 Flathub 上架",
+        "title": "掌控您的",
+        "titleHighlight": "CPU 性能",
+        "subtitle": "一款现代 GTK4 实用工具，用于监控和切换 CPU 频率调节器——快速、安全、美观。",
+        "downloadFlathub": "在 Flathub 获取",
+        "viewSource": "查看源码"
+    },
+    "features": {
+        "title": "您所需的一切",
+        "subtitle": "为现代 Linux 桌面打造的完整 CPU 管理体验。",
+        "items": [
+            {
+                "icon": "Zap",
+                "title": "即时切换",
+                "desc": "一键在性能、省电等模式之间切换。"
+            },
+            {
+                "icon": "Activity",
+                "title": "实时监控",
+                "desc": "实时查看所有核心的 CPU 频率变化。"
+            },
+            {
+                "icon": "ShieldCheck",
+                "title": "安全设计",
+                "desc": "Polkit 身份验证确保图形界面无需以 root 身份运行。"
+            },
+            {
+                "icon": "Palette",
+                "title": "现代界面",
+                "desc": "基于 GTK4 + libadwaita 构建，提供原生 GNOME 体验。"
+            },
+            {
+                "icon": "Globe",
+                "title": "多语言支持",
+                "desc": "支持英语、西班牙语、葡萄牙语、日语、中文和意大利语。"
+            },
+            {
+                "icon": "RefreshCw",
+                "title": "持久化设置",
+                "desc": "您选择的调节器会在每次启动时自动恢复。"
+            }
+        ]
+    },
+    "download": {
+        "title": "获取 CPU Governor",
+        "subtitle": "可在 Flathub 上获取，或在 GitHub 上查看开源代码。",
+        "flathub": "从 Flathub 安装",
+        "flathubSub": "最简单的方式 — 通用 Linux 软件包",
+        "deb": "下载 .deb",
+        "debSub": "适用于 Debian、Ubuntu、Parrot OS 等",
+        "source": "从源码编译",
+        "sourceSub": "通过 Meson",
+        "requirements": "此应用需要在宿主系统上安装 cpugov-daemon。详情请参阅 README。"
+    },
+    "install": {
+        "title": "安装指南",
+        "subtitle": "一分钟内启动 CPU Governor。",
+        "step1": "1. 安装主机守护进程 (必填)",
+        "step1Desc": "CPU Governor 需要一个受 Polkit 保护的系统守护进程才能安全地应用硬件更改，而无需以 root 身份运行 GUI。",
+        "step2": "2. 安装应用 (Flatpak)",
+        "step2Desc": "在任何 Linux 发行版上安装 CPU Governor 的推荐方法。",
+        "step3": "替代方案: Debian / Ubuntu (.deb)",
+        "step3Desc": "基于 Debian 发行版的原生包。下载最新的 .deb 版本并通过 APT 安装。"
+    },
+    "footer": {
+        "madeWith": "用",
+        "by": "由",
+        "rights": "GPL-3.0 许可证",
+        "links": {
+            "flathub": "Flathub",
+            "github": "GitHub",
+            "issues": "报告问题"
+        }
+    }
+}

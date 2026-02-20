@@ -1,0 +1,83 @@
+{
+    "nav": {
+        "features": "Funzionalità",
+        "download": "Scarica",
+        "install": "Installa",
+        "github": "GitHub"
+    },
+    "hero": {
+        "badge": "Disponibile su Flathub",
+        "title": "Controlla la",
+        "titleHighlight": "Potenza della CPU",
+        "subtitle": "Un moderno strumento GTK4 per monitorare e cambiare i governor della frequenza CPU — veloce, sicuro e bello.",
+        "downloadFlathub": "Ottieni su Flathub",
+        "viewSource": "Vedi il Codice"
+    },
+    "features": {
+        "title": "Tutto ciò di cui Hai Bisogno",
+        "subtitle": "Un'esperienza completa di gestione della CPU per il desktop Linux moderno.",
+        "items": [
+            {
+                "icon": "Zap",
+                "title": "Cambio Istantaneo",
+                "desc": "Passa tra Prestazioni, Risparmio energetico e altri governor con un clic."
+            },
+            {
+                "icon": "Activity",
+                "title": "Monitoraggio in Tempo Reale",
+                "desc": "Visualizza le frequenze CPU per ogni core in tempo reale."
+            },
+            {
+                "icon": "ShieldCheck",
+                "title": "Sicuro per Design",
+                "desc": "L'autenticazione Polkit garantisce che l'interfaccia non venga mai eseguita come root."
+            },
+            {
+                "icon": "Palette",
+                "title": "Interfaccia Moderna",
+                "desc": "Costruito con GTK4 + libadwaita per un'esperienza GNOME nativa."
+            },
+            {
+                "icon": "Globe",
+                "title": "Multilingue",
+                "desc": "Disponibile in inglese, spagnolo, portoghese, giapponese, cinese e italiano."
+            },
+            {
+                "icon": "RefreshCw",
+                "title": "Impostazioni Persistenti",
+                "desc": "Il tuo governor preferito viene ricordato e ripristinato automaticamente ad ogni avvio."
+            }
+        ]
+    },
+    "download": {
+        "title": "Ottieni CPU Governor",
+        "subtitle": "Disponibile su Flathub e come open source su GitHub.",
+        "flathub": "Installa da Flathub",
+        "flathubSub": "Il modo più semplice — pacchetto Linux universale",
+        "deb": "Scarica .deb",
+        "debSub": "Per Debian, Ubuntu, Parrot OS e altri",
+        "source": "Compila dai Sorgenti",
+        "sourceSub": "tramite Meson",
+        "requirements": "Richiede cpugov-daemon installato sul sistema host. Consulta il README per le istruzioni."
+    },
+    "install": {
+        "title": "Guida all'Installazione",
+        "subtitle": "Avvia CPU Governor in meno di un minuto.",
+        "step1": "1. Installa Demone Host (Obbligatorio)",
+        "step1Desc": "CPU Governor richiede un demone di sistema protetto da Polkit per applicare in modo sicuro le modifiche hardware senza eseguire la GUI come root.",
+        "step2": "2. Installa App (Flatpak)",
+        "step2Desc": "Il modo consigliato per installare CPU Governor su qualsiasi distribuzione Linux.",
+        "step3": "Alternativa: Debian / Ubuntu (.deb)",
+        "step3Desc": "Pacchetto nativo per le distribuzioni basate su Debian. Scarica l'ultimo rilascio .deb ed installalo tramite APT."
+    },
+    "footer": {
+        "madeWith": "Fatto con",
+        "by": "da",
+        "rights": "Licenza GPL-3.0",
+        "links": {
+            "flathub": "Flathub",
+            "github": "GitHub",
+            "issues": "Segnala un Problema"
+        }
+    }
+}
