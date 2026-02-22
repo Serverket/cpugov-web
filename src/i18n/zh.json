@@ -6,11 +6,11 @@
         "github": "GitHub"
     },
     "hero": {
-        "badge": "现已在 Flathub 上架",
+        "badge": "高性能原生 CPU 控制",
         "title": "掌控您的",
         "titleHighlight": "CPU 性能",
         "subtitle": "一款现代 GTK4 实用工具，用于监控和切换 CPU 频率调节器——快速、安全、美观。",
-        "downloadFlathub": "在 Flathub 获取",
+        "downloadDeb": "下载 .deb",
         "viewSource": "查看源码"
     },
     "features": {
@@ -51,33 +51,30 @@
     },
     "download": {
         "title": "获取 CPU Governor",
-        "subtitle": "可在 Flathub 上获取，或在 GitHub 上查看开源代码。",
-        "flathub": "从 Flathub 安装",
-        "flathubSub": "最简单的方式 — 通用 Linux 软件包",
+        "subtitle": "提供原生 Debian 软件包，并在 GitHub 上开源。",
         "deb": "下载 .deb",
         "debSub": "适用于 Debian、Ubuntu、Parrot OS 等",
         "source": "从源码编译",
         "sourceSub": "通过 Meson",
-        "requirements": "此应用需要在宿主系统上安装 cpugov-daemon。详情请参阅 README。"
+        "requirements": ".deb 软件包包含所有组件（应用 + 守护进程）。"
     },
     "install": {
         "title": "安装指南",
-        "subtitle": "一分钟内启动 CPU Governor。",
-        "step1": "1. 安装主机守护进程 (必填)",
-        "step1Desc": "CPU Governor 需要一个受 Polkit 保护的系统守护进程才能安全地应用硬件更改，而无需以 root 身份运行 GUI。",
-        "step2": "2. 安装应用 (Flatpak)",
-        "step2Desc": "在任何 Linux 发行版上安装 CPU Governor 的推荐方法。",
-        "step3": "替代方案: Debian / Ubuntu (.deb)",
-        "step3Desc": "基于 Debian 发行版的原生包。下载最新的 .deb 版本并通过 APT 安装。"
+        "subtitle": "请选择安装完整系统（应用 + 守护进程）的首选方式。",
+        "step1": "选项 A: Debian 软件包 (.deb)",
+        "step1Desc": "推荐用于 Debian 系发行版。自动安装 GUI、守护进程并配置 Polkit 权限。",
+        "step2": "选项 B: 快速安装脚本",
+        "step2Desc": "通过单条命令从源码编译并安装完整系统。适合其他发行版。"
     },
     "footer": {
         "madeWith": "用",
         "by": "由",
         "rights": "GPL-3.0 许可证",
         "links": {
-            "flathub": "Flathub",
             "github": "GitHub",
-            "issues": "报告问题"
+            "issues": "报告问题",
+            "tos": "服务条款",
+            "privacy": "隐私政策"
         }
     }
 }

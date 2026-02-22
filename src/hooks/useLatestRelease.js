@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-const GITHUB_API = 'https://api.github.com/repos/Serverket/cpugov/tags'
+const GITHUB_API = 'https://api.github.com/repos/Serverket/cpugov/releases/latest'
 
 export function useLatestRelease() {
     const [release, setRelease] = useState(null)
@@ -14,17 +14,22 @@ export function useLatestRelease() {
                 return r.json()
             })
             .then(data => {
-                if (data && data.length > 0) {
-                    const latestTag = data[0].name
-                    const versionStr = latestTag.startsWith('v') ? latestTag.slice(1) : latestTag
+                if (data && data.tag_name) {
+                    const tagName = data.tag_name.toLowerCase()
+                    const latestTag = tagName.startsWith('v') ? tagName : `v${tagName}`
+
+                    // Find the .deb asset
+                    const debAsset = data.assets.find(asset => asset.name.endsWith('.deb'))
+
                     setRelease({
                         tag: latestTag,
-                        releaseUrl: `https://github.com/Serverket/cpugov/releases/tag/${latestTag}`,
-                        debUrl: `https://github.com/Serverket/cpugov/releases/download/${latestTag}/cpugov_${versionStr}_amd64.deb`,
-                        publishedAt: null, // tags endpoint doesn't include dates, but we don't display it anyway
+                        name: data.name,
+                        releaseUrl: data.html_url,
+                        debUrl: debAsset ? debAsset.browser_download_url : data.html_url,
+                        publishedAt: data.published_at,
                     })
                 } else {
-                    throw new Error('No tags found')
+                    throw new Error('No release found')
                 }
             })
             .catch(err => setError(err.message))

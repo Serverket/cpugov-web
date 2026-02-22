@@ -1,8 +1,8 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 
 const GITHUB_URL = 'https://github.com/Serverket/cpugov'
-const FLATHUB_URL = 'https://flathub.org/apps/io.github.serverket.cpugov'
 const ISSUES_URL = 'https://github.com/Serverket/cpugov/issues'
 
 export default function Footer() {
@@ -23,9 +23,9 @@ export default function Footer() {
                     {' · '} <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">{t('footer.rights')}</a>
                 </p>
 
-                {/* Links */}
                 <nav className="flex items-center gap-5">
-                    <a href={FLATHUB_URL} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">{t('footer.links.flathub')}</a>
+                    <Link to="/tos" className="hover:text-white transition-colors">{t('footer.links.tos')}</Link>
+                    <Link to="/privacy" className="hover:text-white transition-colors">{t('footer.links.privacy')}</Link>
                     <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">{t('footer.links.github')}</a>
                     <a href={ISSUES_URL} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">{t('footer.links.issues')}</a>
                 </nav>

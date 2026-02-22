@@ -6,11 +6,11 @@
         "github": "GitHub"
     },
     "hero": {
-        "badge": "Flathubで公開中",
+        "badge": "高性能なネイティブCPU制御",
         "title": "CPUの",
         "titleHighlight": "パワーを制御",
         "subtitle": "CPUの周波数スケーリングガバナーを監視・切り替えする、モダンなGTK4ユーティリティ。高速・安全・美しい。",
-        "downloadFlathub": "Flathubで入手",
+        "downloadDeb": ".debをダウンロード",
         "viewSource": "ソースを見る"
     },
     "features": {
@@ -51,33 +51,30 @@
     },
     "download": {
         "title": "CPU Governorを入手",
-        "subtitle": "FlathubとGitHubでオープンソースとして公開中。",
-        "flathub": "Flathubからインストール",
-        "flathubSub": "最も簡単な方法 — 汎用Linuxパッケージ",
+        "subtitle": "ネイティブDebianパッケージおよびGitHubでオープンソースとして公開中。",
         "deb": ".debをダウンロード",
-        "debSub": "Debian・Ubuntu・Parrot OSなど向け",
+        "debSub": "Debian・Ubuntu・Parrot OS向け",
         "source": "ソースからビルド",
         "sourceSub": "Mesonを使用",
-        "requirements": "このアプリはホストシステムにcpugov-daemonのインストールが必要です。詳細はREADMEをご覧ください。"
+        "requirements": ".debパッケージにはすべて（アプリ＋デーモン）が含まれています。"
     },
     "install": {
         "title": "インストールガイド",
-        "subtitle": "CPU Governorを1分以内に起動します。",
-        "step1": "1. ホストデーモンのインストール (必須)",
-        "step1Desc": "GUIをrootとして実行せずに安全にハードウェア設定を適用するため、Polkitで保護されたシステムデーモンが必要です。",
-        "step2": "2. アプリのインストール (Flatpak)",
-        "step2Desc": "すべてのLinuxディストリビューションで推奨されるインストール方法です。",
-        "step3": "代替方法: Debian / Ubuntu (.deb)",
-        "step3Desc": "Debian系向けのネイティブパッケージです。最新の.debをダウンロードし、APT経由でインストールします。"
+        "subtitle": "完全なシステム（アプリ＋デーモン）をインストールするお好みの方法を選択してください。",
+        "step1": "オプションA: Debianパッケージ (.deb)",
+        "step1Desc": "Debian系システムに推奨される方法です。GUIとデーモンをインストールし、Polkitを自動的に設定します。",
+        "step2": "オプションB: クイックインストールスクリプト",
+        "step2Desc": "ソースからシステム全体をビルドしてインストールする単一のコマンドです。"
     },
     "footer": {
         "madeWith": "作成",
         "by": "by",
         "rights": "GPL-3.0ライセンス",
         "links": {
-            "flathub": "Flathub",
             "github": "GitHub",
-            "issues": "バグ報告"
+            "issues": "バグ報告",
+            "tos": "利用規約",
+            "privacy": "プライバシーポリシー"
         }
     }
 }

@@ -1,9 +1,10 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { motion } from 'framer-motion'
-import { Download, Github, ChevronDown } from 'lucide-react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { Download, Github, ChevronDown, Loader2 } from 'lucide-react'
 
-const FLATHUB_URL = 'https://flathub.org/apps/io.github.serverket.cpugov'
+import { useLatestRelease } from '../hooks/useLatestRelease'
+
 const GITHUB_URL = 'https://github.com/Serverket/cpugov'
 
 // Animated CPU grid background
@@ -39,7 +40,9 @@ function CpuGrid() {
 
 export default function Hero() {
     const { t } = useTranslation()
+    const { release } = useLatestRelease()
     const videoRef = useRef(null)
+    const [isVideoLoaded, setIsVideoLoaded] = useState(false)
 
     useEffect(() => {
         if (videoRef.current) videoRef.current.playbackRate = 2
@@ -58,9 +61,9 @@ export default function Hero() {
                 transition={{ delay: 0.2 }}
                 className="mb-6"
             >
-                <span className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 text-sm font-medium text-brand-300 border border-brand-500/30">
+                <span className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 text-sm font-medium text-brand-300 border border-brand-500/30 shadow-lg capitalize">
                     <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-                    {t('hero.badge')}
+                    {release ? `${release.tag}: ${release.name}` : t('hero.badge')}
                 </span>
             </motion.div>
 
@@ -93,13 +96,11 @@ export default function Hero() {
                 className="flex flex-col sm:flex-row gap-4 items-center"
             >
                 <a
-                    href={FLATHUB_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="#download"
                     className="group flex items-center gap-2.5 bg-brand-600 hover:bg-brand-500 text-white font-semibold px-7 py-3.5 rounded-xl transition-all duration-200 glow hover:glow hover:scale-105 shadow-lg"
                 >
                     <Download size={18} />
-                    {t('hero.downloadFlathub')}
+                    {t('hero.downloadDeb')}
                 </a>
                 <a
                     href={GITHUB_URL}
@@ -128,7 +129,18 @@ export default function Hero() {
                         <span className="ml-4 text-xs text-white/40 font-medium">CPU Governor — Live Demo</span>
                     </div>
                     {/* Video demo */}
-                    <div className="bg-[#0d0d1a] overflow-hidden">
+                    <div className="bg-[#0d0d1a] relative overflow-hidden min-h-[400px] flex items-center justify-center">
+                        <AnimatePresence>
+                            {!isVideoLoaded && (
+                                <motion.div
+                                    initial={{ opacity: 1 }}
+                                    exit={{ opacity: 0 }}
+                                    className="absolute inset-0 flex flex-col items-center justify-center bg-[#0d0d1a] z-10"
+                                >
+                                    <Loader2 className="w-10 h-10 text-brand-500 animate-spin" />
+                                </motion.div>
+                            )}
+                        </AnimatePresence>
                         <video
                             ref={videoRef}
                             src="/demo-cpugov.mp4"
@@ -136,7 +148,8 @@ export default function Hero() {
                             loop
                             muted
                             playsInline
-                            className="w-full h-auto block"
+                            onCanPlayThrough={() => setIsVideoLoaded(true)}
+                            className={`w-full h-auto block transition-opacity duration-700 ${isVideoLoaded ? 'opacity-100' : 'opacity-0'}`}
                         />
                     </div>
                 </div>

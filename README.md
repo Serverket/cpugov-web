@@ -12,7 +12,7 @@ The official landing page and documentation site for **CPU Governor**, built wit
 ## Features
 
 - **Multilingual Support** — Available in English, Spanish, Portuguese, Japanese, Chinese, and Italian (`react-i18next`).
-- **Interactive Installation Guide** — Unified instructions for the D-Bus daemon, Flatpak, and `.deb` packages.
+- **Interactive Installation Guide** — Unified instructions for the D-Bus daemon and native `.deb` packages.
 - **Glassmorphic UI** — A modern, dark-mode-first aesthetic using Tailwind CSS and Framer Motion.
 - **PWA Integration** — Installable as a desktop/mobile app for offline reference.
 - **Responsive Design** — Optimized for everything from mobile phones to high-res monitors.
@@ -24,11 +24,10 @@ This website serves as the primary storefront for the [CPU Governor App](https:/
 ```mermaid
 graph TD
     A[Visitor] --> B{CPU Governor Web}
-    B --> C[Flathub / App Store]
-    B --> D[GitHub / Source]
-    B --> E[Installation Docs]
-    E --> F[Daemon Installer]
-    E --> G[Flatpak Guide]
+    B --> C[GitHub / Source]
+    B --> D[Installation Docs]
+    D --> E[Daemon Installer]
+    D --> F[Native .deb]
 ```
 
 ## Development

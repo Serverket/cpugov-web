@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 import { Download as DownloadIcon, Github, Terminal, AlertCircle, Tag, Loader2 } from 'lucide-react'
 import { useLatestRelease } from '../hooks/useLatestRelease'
 
-const FLATHUB_URL = 'https://flathub.org/apps/io.github.serverket.cpugov'
 const GITHUB_URL = 'https://github.com/Serverket/cpugov'
 
 function DownloadCard({ icon: Icon, title, sub, href, primary, disabled }) {
@@ -16,10 +15,10 @@ function DownloadCard({ icon: Icon, title, sub, href, primary, disabled }) {
             whileHover={disabled ? {} : { y: -4, scale: 1.02 }}
             whileTap={disabled ? {} : { scale: 0.98 }}
             className={`flex flex-col items-center gap-3 p-7 rounded-2xl transition-all duration-300 border ${primary
-                    ? 'bg-brand-600/80 border-brand-500 hover:bg-brand-500 glow shadow-2xl'
-                    : disabled
-                        ? 'glass border-white/5 opacity-50 cursor-not-allowed'
-                        : 'glass hover:bg-white/10 border-white/10'
+                ? 'bg-brand-600/80 border-brand-500 hover:bg-brand-500 glow shadow-2xl'
+                : disabled
+                    ? 'glass border-white/5 opacity-50 cursor-not-allowed'
+                    : 'glass hover:bg-white/10 border-white/10'
                 }`}
         >
             <div className={`w-14 h-14 rounded-2xl flex items-center justify-center ${primary ? 'bg-white/20' : 'bg-white/5'}`}>
@@ -80,14 +79,7 @@ export default function Download() {
                 </motion.div>
 
                 {/* Cards */}
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 max-w-3xl mx-auto">
-                    <DownloadCard
-                        icon={DownloadIcon}
-                        title={t('download.flathub')}
-                        sub={t('download.flathubSub')}
-                        href={FLATHUB_URL}
-                        primary
-                    />
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 max-w-2xl mx-auto">
                     <DownloadCard
                         icon={Terminal}
                         title={t('download.deb')}
@@ -114,22 +106,6 @@ export default function Download() {
                     <p className="text-white/60 text-sm leading-relaxed">{t('download.requirements')}</p>
                 </motion.div>
 
-                {/* Flathub badge */}
-                <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.4 }}
-                    className="mt-8 flex justify-center"
-                >
-                    <a href={FLATHUB_URL} target="_blank" rel="noopener noreferrer">
-                        <img
-                            src="https://flathub.org/api/badge?locale=en"
-                            alt="Get it on Flathub"
-                            className="h-12 hover:scale-105 transition-transform duration-200"
-                        />
-                    </a>
-                </motion.div>
             </div>
         </section>
     )

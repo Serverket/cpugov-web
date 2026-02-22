@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Globe } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { Link, useLocation } from 'react-router-dom'
 
 const LANGS = [
     { code: 'en', label: 'English', flag: '🇺🇸' },
@@ -28,25 +29,25 @@ export default function Navbar() {
             initial={{ y: -80, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
-            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'glass border-b border-white/10 py-3' : 'py-5'
+            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-black/80 backdrop-blur-xl border-b border-white/10 py-3' : 'py-5'
                 }`}
         >
             <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
                 {/* Logo */}
-                <a href="#" className="flex items-center gap-2 font-bold text-lg">
+                <Link to="/" className="flex items-center gap-2 font-bold text-lg">
                     <img
                         src="/io.github.serverket.cpugov.svg"
                         alt="CPU Governor logo"
                         className="w-8 h-8"
                     />
                     <span className="gradient-text">CPU Governor</span>
-                </a>
+                </Link>
 
                 {/* Nav Links */}
                 <div className="hidden md:flex items-center gap-8 text-sm font-medium text-white/70">
-                    <a href="#features" className="hover:text-white transition-colors">{t('nav.features')}</a>
-                    <a href="#install" className="hover:text-white transition-colors">{t('nav.install')}</a>
-                    <a href="#download" className="hover:text-white transition-colors">{t('nav.download')}</a>
+                    <a href="/#features" className="hover:text-white transition-colors">{t('nav.features')}</a>
+                    <a href="/#install" className="hover:text-white transition-colors">{t('nav.install')}</a>
+                    <a href="/#download" className="hover:text-white transition-colors">{t('nav.download')}</a>
                     <a href="https://github.com/Serverket/cpugov" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">{t('nav.github')}</a>
                 </div>
 

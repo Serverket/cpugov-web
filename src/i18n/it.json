@@ -6,11 +6,11 @@
         "github": "GitHub"
     },
     "hero": {
-        "badge": "Disponibile su Flathub",
+        "badge": "Controllo CPU Nativo ad Alte Prestazioni",
         "title": "Controlla la",
         "titleHighlight": "Potenza della CPU",
         "subtitle": "Un moderno strumento GTK4 per monitorare e cambiare i governor della frequenza CPU — veloce, sicuro e bello.",
-        "downloadFlathub": "Ottieni su Flathub",
+        "downloadDeb": "Scarica .deb",
         "viewSource": "Vedi il Codice"
     },
     "features": {
@@ -51,33 +51,30 @@
     },
     "download": {
         "title": "Ottieni CPU Governor",
-        "subtitle": "Disponibile su Flathub e come open source su GitHub.",
-        "flathub": "Installa da Flathub",
-        "flathubSub": "Il modo più semplice — pacchetto Linux universale",
+        "subtitle": "Disponibile come pacchetto nativo Debian e open source su GitHub.",
         "deb": "Scarica .deb",
         "debSub": "Per Debian, Ubuntu, Parrot OS e altri",
         "source": "Compila dai Sorgenti",
         "sourceSub": "tramite Meson",
-        "requirements": "Richiede cpugov-daemon installato sul sistema host. Consulta il README per le istruzioni."
+        "requirements": "Il pacchetto .deb include tutto (App + Demone)."
     },
     "install": {
         "title": "Guida all'Installazione",
-        "subtitle": "Avvia CPU Governor in meno di un minuto.",
-        "step1": "1. Installa Demone Host (Obbligatorio)",
-        "step1Desc": "CPU Governor richiede un demone di sistema protetto da Polkit per applicare in modo sicuro le modifiche hardware senza eseguire la GUI come root.",
-        "step2": "2. Installa App (Flatpak)",
-        "step2Desc": "Il modo consigliato per installare CPU Governor su qualsiasi distribuzione Linux.",
-        "step3": "Alternativa: Debian / Ubuntu (.deb)",
-        "step3Desc": "Pacchetto nativo per le distribuzioni basate su Debian. Scarica l'ultimo rilascio .deb ed installalo tramite APT."
+        "subtitle": "Scegli il tuo metodo preferito per installare il sistema completo (App + Demone).",
+        "step1": "Opzione A: Pacchetto Debian (.deb)",
+        "step1Desc": "Il modo consigliato per i sistemi basati su Debian. Installa la GUI, il demone di sistema e configura Polkit automaticamente.",
+        "step2": "Opzione B: Script di Installazione Rapida",
+        "step2Desc": "Un singolo comando per compilare e installare il sistema completo dai sorgenti."
     },
     "footer": {
         "madeWith": "Fatto con",
         "by": "da",
         "rights": "Licenza GPL-3.0",
         "links": {
-            "flathub": "Flathub",
             "github": "GitHub",
-            "issues": "Segnala un Problema"
+            "issues": "Segnala un Problema",
+            "tos": "Termini di Servizio",
+            "privacy": "Informativa sulla Privacy"
         }
     }
 }

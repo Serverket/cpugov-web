@@ -77,29 +77,20 @@ export default function Install() {
 
                 <div className="space-y-6">
                     <InstallStep
-                        icon={Terminal}
+                        icon={Box}
                         title={t('install.step1')}
                         desc={t('install.step1Desc')}
-                        code="curl -sS https://raw.githubusercontent.com/Serverket/cpugov/master/daemon/install.sh | sudo bash"
+                        code="sudo apt install ./cpugov*.deb"
                         delay={0.1}
                     />
 
-                    <div className="grid md:grid-cols-2 gap-6">
-                        <InstallStep
-                            icon={Box}
-                            title={t('install.step2')}
-                            desc={t('install.step2Desc')}
-                            code="flatpak install flathub io.github.serverket.cpugov"
-                            delay={0.2}
-                        />
-                        <InstallStep
-                            icon={Box}
-                            title={t('install.step3')}
-                            desc={t('install.step3Desc')}
-                            code="sudo apt install ./cpugov*.deb"
-                            delay={0.3}
-                        />
-                    </div>
+                    <InstallStep
+                        icon={Terminal}
+                        title={t('install.step2')}
+                        desc={t('install.step2Desc')}
+                        code="curl -sS https://raw.githubusercontent.com/Serverket/cpugov/master/daemon/install.sh | sudo bash"
+                        delay={0.2}
+                    />
                 </div>
             </div>
         </section>

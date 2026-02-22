@@ -6,11 +6,11 @@
         "github": "GitHub"
     },
     "hero": {
-        "badge": "Disponível no Flathub",
+        "badge": "Controle de CPU Nativo de Alto Desempenho",
         "title": "Controle o",
         "titleHighlight": "Desempenho da CPU",
         "subtitle": "Um utilitário GTK4 moderno para monitorar e alternar governadores de escalonamento de frequência de CPU — rápido, seguro e bonito.",
-        "downloadFlathub": "Obter no Flathub",
+        "downloadDeb": "Baixar .deb",
         "viewSource": "Ver Código"
     },
     "features": {
@@ -51,33 +51,30 @@
     },
     "download": {
         "title": "Obtenha o CPU Governor",
-        "subtitle": "Disponível no Flathub e como código aberto no GitHub.",
-        "flathub": "Instalar do Flathub",
-        "flathubSub": "A forma mais fácil — pacote Linux universal",
+        "subtitle": "Disponível como pacote nativo Debian e código aberto no GitHub.",
         "deb": "Baixar .deb",
         "debSub": "Para Debian, Ubuntu, Parrot OS e mais",
         "source": "Compilar do Código",
         "sourceSub": "via Meson",
-        "requirements": "Requer cpugov-daemon instalado no sistema host. Veja o README para instruções."
+        "requirements": "O pacote .deb inclui tudo (App + Daemon)."
     },
     "install": {
         "title": "Guia de Instalação",
-        "subtitle": "Execute o CPU Governor em menos de um minuto.",
-        "step1": "1. Instalar Daemon do Host (Obrigatório)",
-        "step1Desc": "O CPU Governor requer um daemon de sistema protegido pelo Polkit para aplicar alterações de hardware com segurança sem executar a GUI como root.",
-        "step2": "2. Instalar App (Flatpak)",
-        "step2Desc": "A maneira recomendada de instalar o CPU Governor em qualquer distribuição Linux.",
-        "step3": "Alternativa: Debian / Ubuntu (.deb)",
-        "step3Desc": "Pacote nativo para distribuições baseadas no Debian. Baixe o .deb mais recente e instale-o via APT."
+        "subtitle": "Escolha o seu método preferido para instalar o sistema completo (App + Daemon).",
+        "step1": "Opção A: Pacote Debian (.deb)",
+        "step1Desc": "O método recomendado para sistemas baseados em Debian. Instala a GUI, o daemon e configura o Polkit automaticamente.",
+        "step2": "Opção B: Script de Instalação Rápida",
+        "step2Desc": "Um único comando para compilar e instalar o sistema completo a partir do código-fonte."
     },
     "footer": {
         "madeWith": "Feito com",
         "by": "por",
-        "rights": "Licença GPL-3.0",
+        "rights": "Licencia GPL-3.0",
         "links": {
-            "flathub": "Flathub",
             "github": "GitHub",
-            "issues": "Reportar Problema"
+            "issues": "Reportar Problema",
+            "tos": "Termos de Serviço",
+            "privacy": "Política de Privacidade"
         }
     }
 }

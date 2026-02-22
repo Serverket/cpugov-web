@@ -6,11 +6,11 @@
         "github": "GitHub"
     },
     "hero": {
-        "badge": "Disponible en Flathub",
+        "badge": "Control de CPU Nativo de Alto Rendimiento",
         "title": "Controla el",
         "titleHighlight": "Poder de tu CPU",
         "subtitle": "Una utilidad GTK4 moderna para monitorear y cambiar gobernadores de frecuencia — rápida, segura y hermosa.",
-        "downloadFlathub": "Obtener en Flathub",
+        "downloadDeb": "Descargar .deb",
         "viewSource": "Ver Código"
     },
     "features": {
@@ -51,33 +51,30 @@
     },
     "download": {
         "title": "Obtén CPU Governor",
-        "subtitle": "Disponible en Flathub y como código abierto en GitHub.",
-        "flathub": "Instalar desde Flathub",
-        "flathubSub": "La forma más fácil — paquete Linux universal",
+        "subtitle": "Disponible como paquete nativo de Debian y código abierto en GitHub.",
         "deb": "Descargar .deb",
         "debSub": "Para Debian, Ubuntu, Parrot OS y más",
         "source": "Compilar desde Fuentes",
         "sourceSub": "vía Meson",
-        "requirements": "Requiere cpugov-daemon instalado en el host. Ver README para instrucciones."
+        "requirements": "El paquete .deb incluye todo (App + Demonio)."
     },
     "install": {
         "title": "Guía de Instalación",
-        "subtitle": "Ejecuta CPU Governor en menos de un minuto.",
-        "step1": "1. Instalar Demonio del Host (Requerido)",
-        "step1Desc": "CPU Governor requiere un demonio del sistema asegurado por Polkit para aplicar cambios de hardware de forma segura sin ejecutar la GUI como root.",
-        "step2": "2. Instalar App (Flatpak)",
-        "step2Desc": "La forma recomendada de instalar CPU Governor en cualquier distribución Linux.",
-        "step3": "Alternativa: Debian / Ubuntu (.deb)",
-        "step3Desc": "Paquete nativo para distribuciones basadas en Debian. Descarga el último .deb e instálalo vía APT."
+        "subtitle": "Elige tu método preferido para instalar el sistema completo (App + Demonio).",
+        "step1": "Opción A: Paquete Debian (.deb)",
+        "step1Desc": "La forma recomendada para sistemas basados en Debian. Instala la GUI, el demonio y configura Polkit automáticamente.",
+        "step2": "Opción B: Script de Instalación Rápida",
+        "step2Desc": "Un solo comando para compilar e instalar el sistema completo desde el código fuente. Ideal para otras distribuciones."
     },
     "footer": {
         "madeWith": "Hecho con",
         "by": "por",
         "rights": "Licencia GPL-3.0",
         "links": {
-            "flathub": "Flathub",
             "github": "GitHub",
-            "issues": "Reportar Problema"
+            "issues": "Reportar Problema",
+            "tos": "Términos de Servicio",
+            "privacy": "Política de Privacidad"
         }
     }
 }

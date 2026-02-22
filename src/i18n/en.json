@@ -6,11 +6,11 @@
         "github": "GitHub"
     },
     "hero": {
-        "badge": "Now Available on Flathub",
+        "badge": "High-Performance Native CPU Control",
         "title": "Control Your",
         "titleHighlight": "CPU Power",
         "subtitle": "A modern GTK4 utility to monitor and switch CPU frequency scaling governors — fast, secure, and beautiful.",
-        "downloadFlathub": "Get on Flathub",
+        "downloadDeb": "Download .deb",
         "viewSource": "View Source"
     },
     "features": {
@@ -51,33 +51,30 @@
     },
     "download": {
         "title": "Get CPU Governor",
-        "subtitle": "Available on Flathub and as open source on GitHub.",
-        "flathub": "Install from Flathub",
-        "flathubSub": "The easiest way — universal Linux package",
+        "subtitle": "Available as a native Debian package and open source on GitHub.",
         "deb": "Download .deb",
         "debSub": "For Debian, Ubuntu, Parrot OS and more",
         "source": "Build from Source",
         "sourceSub": "via Meson",
-        "requirements": "Requires cpugov-daemon installed on host. See README for instructions."
+        "requirements": "The .deb package includes everything (App + Daemon)."
     },
     "install": {
         "title": "Installation Guide",
-        "subtitle": "Get CPU Governor running in under a minute.",
-        "step1": "1. Install Host Daemon (Required)",
-        "step1Desc": "CPU Governor requires a Polkit-secured system daemon to apply hardware changes safely without running the GUI as root.",
-        "step2": "2. Install App (Flatpak)",
-        "step2Desc": "The recommended way to install CPU Governor on any Linux distribution.",
-        "step3": "Alternative: Debian / Ubuntu (.deb)",
-        "step3Desc": "Native package for Debian-based distributions. Download the latest .deb release and install it via APT."
+        "subtitle": "Choose your preferred way to install the complete software (App + Daemon).",
+        "step1": "Option A: Debian Package (.deb)",
+        "step1Desc": "The recommended way for Debian-based systems. It installs the GUI, the background daemon, and configures Polkit automatically.",
+        "step2": "Option B: Quick Install Script",
+        "step2Desc": "A single command to build and install the complete system from source. Ideal for other distributions or testing."
     },
     "footer": {
         "madeWith": "Made with",
         "by": "by",
         "rights": "GPL-3.0 License",
         "links": {
-            "flathub": "Flathub",
             "github": "GitHub",
-            "issues": "Report Issue"
+            "issues": "Report Issue",
+            "tos": "Terms of Service",
+            "privacy": "Privacy Policy"
         }
     }
 }
