@@ -4,8 +4,10 @@
 @tailwind utilities;
 
 @layer base {
-  *, *::before, *::after { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-[#0a0a0f] text-white antialiased;
     margin: 0;
@@ -15,13 +17,16 @@
   ::-webkit-scrollbar {
     width: 10px;
   }
+
   ::-webkit-scrollbar-track {
     background: transparent;
   }
+
   ::-webkit-scrollbar-thumb {
     @apply bg-white/10 rounded-full border-2 border-transparent bg-clip-padding;
     transition: background 0.2s ease;
   }
+
   ::-webkit-scrollbar-thumb:hover {
     @apply bg-white/20;
   }
@@ -31,10 +36,12 @@
   .glass {
     @apply bg-white/5 backdrop-blur-md border border-white/10;
   }
+
   .gradient-text {
     @apply bg-gradient-to-r from-brand-400 via-electric-400 to-brand-300 bg-clip-text text-transparent;
   }
+
   .glow {
-    box-shadow: 0 0 40px -10px rgba(99,102,241,0.5);
+    box-shadow: 0 0 40px -10px rgba(99, 102, 241, 0.5);
   }
 }

@@ -32,7 +32,17 @@ export function useLatestRelease() {
                     throw new Error('No release found')
                 }
             })
-            .catch(err => setError(err.message))
+            .catch(err => {
+                setError(err.message)
+                // Fallback for when GitHub API rate limit is exceeded
+                setRelease({
+                    tag: 'v0.3.0',
+                    name: 'Flatdumb',
+                    releaseUrl: 'https://github.com/Serverket/cpugov/releases/tag/v0.3.0',
+                    debUrl: 'https://github.com/Serverket/cpugov/releases/download/v0.3.0/cpugov_0.3.0_amd64.deb',
+                    publishedAt: new Date().toISOString()
+                })
+            })
             .finally(() => setLoading(false))
     }, [])
 

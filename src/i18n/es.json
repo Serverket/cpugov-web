@@ -56,7 +56,9 @@
         "debSub": "Para Debian, Ubuntu, Parrot OS y más",
         "source": "Compilar desde Fuentes",
         "sourceSub": "vía Meson",
-        "requirements": "El paquete .deb incluye todo (App + Demonio)."
+        "requirements": "El paquete .deb incluye todo (App + Demonio).",
+        "latest": "Última",
+        "fetching": "Obteniendo versión…"
     },
     "install": {
         "title": "Guía de Instalación",
@@ -76,5 +78,14 @@
             "tos": "Términos de Servicio",
             "privacy": "Política de Privacidad"
         }
+    },
+    "parrot": {
+        "title": "Hecho para Parrot OS",
+        "subtitle": "¡Amamos Parrot Security! CPU Governor es el compañero perfecto para tu escritorio enfocado en seguridad.",
+        "desc": "Totalmente compatible con las ediciones Security y Home de Parrot OS. Optimizado para rendimiento y gestión de energía.",
+        "cta": "Obtener .deb para Parrot",
+        "ctaDistro": "Descargar Parrot OS",
+        "compatible": "COMPATIBLE",
+        "officialSupport": "Soporte Oficial"
     }
 }

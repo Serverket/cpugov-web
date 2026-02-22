@@ -33,10 +33,11 @@ function DownloadCard({ icon: Icon, title, sub, href, primary, disabled }) {
 }
 
 function VersionBadge({ release, loading, error }) {
+    const { t } = useTranslation()
     if (loading) return (
         <span className="inline-flex items-center gap-1.5 glass rounded-full px-4 py-1.5 text-sm text-white/50 border border-white/10">
             <Loader2 size={12} className="animate-spin" />
-            Fetching version…
+            {t('download.fetching')}
         </span>
     )
     if (error || !release) return null
@@ -47,7 +48,7 @@ function VersionBadge({ release, loading, error }) {
             className="inline-flex items-center gap-1.5 glass rounded-full px-4 py-1.5 text-sm font-medium text-green-400 border border-green-500/30"
         >
             <Tag size={12} />
-            Latest: {release.tag}
+            {t('download.latest')}: {release.tag}
         </motion.span>
     )
 }

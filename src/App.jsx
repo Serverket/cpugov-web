@@ -11,6 +11,7 @@ import Footer from './components/Footer'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import TermsOfService from './pages/TermsOfService'
 import BackToTop from './components/BackToTop'
+import ParrotSection from './components/ParrotSection'
 
 function LandingPage() {
   return (
@@ -20,6 +21,7 @@ function LandingPage() {
       <Screenshots />
       <Download />
       <Install />
+      <ParrotSection />
     </>
   )
 }

@@ -56,7 +56,9 @@
         "debSub": "Debian・Ubuntu・Parrot OS向け",
         "source": "ソースからビルド",
         "sourceSub": "Mesonを使用",
-        "requirements": ".debパッケージにはすべて（アプリ＋デーモン）が含まれています。"
+        "requirements": ".debパッケージにはすべて（アプリ＋デーモン）が含まれています。",
+        "latest": "最新",
+        "fetching": "バージョンを取得中…"
     },
     "install": {
         "title": "インストールガイド",
@@ -76,5 +78,14 @@
             "tos": "利用規約",
             "privacy": "プライバシーポリシー"
         }
+    },
+    "parrot": {
+        "title": "Parrot OS向け設計",
+        "subtitle": "Parrot Security OSを応援しています！CPU Governorはセキュリティ重視のデスクトップに最適なツールです。",
+        "desc": "Parrot OS SecurityおよびHomeエディションと完全互換。パフォーマンスと電力管理が最適化されています。",
+        "cta": "Parrot版.debを入手",
+        "ctaDistro": "Parrot OSをダウンロード",
+        "compatible": "互換性あり",
+        "officialSupport": "公式サポート"
     }
 }
