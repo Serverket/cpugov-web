@@ -11,7 +11,8 @@
         "titleHighlight": "Desempenho da CPU",
         "subtitle": "Um utilitário GTK4 moderno para monitorar e alternar governadores de escalonamento de frequência de CPU — rápido, seguro e bonito.",
         "downloadDeb": "Baixar .deb",
-        "viewSource": "Ver Código"
+        "viewSource": "Ver Código",
+        "windowLabel": "CPU Governor — Demo ao Vivo"
     },
     "features": {
         "title": "Tudo que Você Precisa",
@@ -71,13 +72,54 @@
     "footer": {
         "madeWith": "Feito com",
         "by": "por",
-        "rights": "Licencia GPL-3.0",
+        "rights": "Licença GPL-3.0",
         "links": {
             "github": "GitHub",
             "issues": "Reportar Problema",
             "tos": "Termos de Serviço",
             "privacy": "Política de Privacidade"
         }
+    },
+    "screenshots": {
+        "badge": "Em Ação",
+        "title": "Veja Cada Detalhe",
+        "subtitle": "Uma interface nativa e limpa projetada para não atrapalhar enquanto mantém tudo visível de relance.",
+        "pill1": "⚡ Frequência em tempo real",
+        "pill2": "🔒 Protegido por Polkit",
+        "pill3": "🎨 libadwaita nativo",
+        "windowLabel": "CPU Governor — Captura de Tela"
+    },
+    "tos": {
+        "title": "Termos de Serviço",
+        "back": "Voltar ao início",
+        "lastUpdated": "Última atualização: 22 de fevereiro de 2026",
+        "s1Title": "1. Uso Aceitável",
+        "s1Body": "Ao acessar este site ou utilizar o software CPU Governor, você concorda em cumprir todas as leis e regulamentos locais aplicáveis. O software é fornecido como um utilitário para gerenciar os governadores de escalonamento de frequência de CPU em sistemas Linux.",
+        "s2Title": "2. Licença Open Source",
+        "s2Body": "CPU Governor é licenciado sob a GNU General Public License v3.0. Você é livre para usar, modificar e distribuir o software de acordo com os termos desta licença.",
+        "s3Title": "3. Isenção de Garantia",
+        "s3Body": "O SOFTWARE É FORNECIDO \"COMO ESTÁ\", SEM GARANTIA DE QUALQUER TIPO, EXPRESSA OU IMPLÍCITA, INCLUINDO MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIABILIDADE, ADEQUAÇÃO A UM FIM ESPECÍFICO E NÃO VIOLAÇÃO. EM NENHUM CASO OS AUTORES SERÃO RESPONSÁVEIS POR QUALQUER RECLAMAÇÃO, DANO OU OUTRA RESPONSABILIDADE.",
+        "s4Title": "4. Limitação de Responsabilidade",
+        "s4Body": "Alterar os governadores de CPU afeta o consumo de energia e o desempenho térmico do hardware. Use extrema cautela ao utilizar configurações de alto desempenho em sistemas com refrigeração limitada. Não nos responsabilizamos por quaisquer problemas de hardware decorrentes do uso deste software."
+    },
+    "privacy": {
+        "title": "Política de Privacidade",
+        "back": "Voltar ao início",
+        "lastUpdated": "Última atualização: 22 de fevereiro de 2026",
+        "s1Title": "Visão Geral",
+        "s1Body": "No CPU Governor, acessível em cpugov.app, uma das nossas principais prioridades é a privacidade dos nossos visitantes. Este documento de Política de Privacidade contém os tipos de informações coletadas e registradas pelo CPU Governor e como as utilizamos.",
+        "s2Title": "Coleta de Dados",
+        "s2Body": "O CPU Governor e seu site oficial seguem uma política rigorosa de não rastreamento:",
+        "s2i1": "Sem Cookies:",
+        "s2i1Desc": "Não utilizamos cookies ou tecnologias de rastreamento similares.",
+        "s2i2": "Sem Análises:",
+        "s2i2Desc": "Não rastreamos seu comportamento nem mantemos arquivos de log da sua visita.",
+        "s2i3": "Sem Venda de Dados:",
+        "s2i3Desc": "Não vendemos nem compartilhamos informações de usuários com terceiros.",
+        "s3Title": "Infraestrutura",
+        "s3Body": "Nosso site está hospedado na Vercel. Embora não coletemos dados, a Vercel pode coletar logs web padrão necessários para operações técnicas (ex.: endereços IP, tipo de navegador e timestamps). Esses logs não são usados por nós para rastreamento ou identificação.",
+        "s4Title": "Código Aberto",
+        "s4Body": "O aplicativo CPU Governor opera inteiramente de forma local no seu computador. Ele não envia telemetria, relatórios de falhas ou estatísticas de uso para nenhum servidor remoto. As configurações do seu sistema permanecem no seu sistema."
     },
     "parrot": {
         "title": "Feito para Parrot OS",

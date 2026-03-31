@@ -66,12 +66,12 @@ export default function Navbar() {
                                 initial={{ opacity: 0, y: -8, scale: 0.95 }}
                                 animate={{ opacity: 1, y: 0, scale: 1 }}
                                 exit={{ opacity: 0, y: -8, scale: 0.95 }}
-                                className="absolute right-0 mt-2 glass rounded-xl overflow-hidden shadow-2xl"
+                                className="absolute right-0 mt-2 rounded-xl overflow-hidden shadow-2xl bg-[#13131a] border border-white/10"
                             >
                                 {LANGS.map(lang => (
                                     <button
                                         key={lang.code}
-                                        onClick={() => { i18n.changeLanguage(lang.code); setLangOpen(false) }}
+                                        onClick={() => { i18n.changeLanguage(lang.code); localStorage.setItem('cpugov_lang', lang.code); setLangOpen(false) }}
                                         className={`flex items-center gap-2 w-full px-4 py-2.5 text-sm hover:bg-white/10 transition-colors whitespace-nowrap ${i18n.language === lang.code ? 'text-brand-400' : 'text-white/80'
                                             }`}
                                     >

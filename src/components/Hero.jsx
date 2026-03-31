@@ -126,7 +126,7 @@ export default function Hero() {
                         <span className="w-3 h-3 rounded-full bg-red-500/70" />
                         <span className="w-3 h-3 rounded-full bg-yellow-500/70" />
                         <span className="w-3 h-3 rounded-full bg-green-500/70" />
-                        <span className="ml-4 text-xs text-white/40 font-medium">CPU Governor — Live Demo</span>
+                        <span className="ml-4 text-xs text-white/40 font-medium">{t('hero.windowLabel')}</span>
                     </div>
                     {/* Video demo */}
                     <div className="bg-[#0d0d1a] relative overflow-hidden min-h-[400px] flex items-center justify-center">

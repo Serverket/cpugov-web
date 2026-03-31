@@ -11,7 +11,8 @@
         "titleHighlight": "CPU Power",
         "subtitle": "A modern GTK4 utility to monitor and switch CPU frequency scaling governors — fast, secure, and beautiful.",
         "downloadDeb": "Download .deb",
-        "viewSource": "View Source"
+        "viewSource": "View Source",
+        "windowLabel": "CPU Governor — Live Demo"
     },
     "features": {
         "title": "Everything You Need",
@@ -78,6 +79,47 @@
             "tos": "Terms of Service",
             "privacy": "Privacy Policy"
         }
+    },
+    "screenshots": {
+        "badge": "In Action",
+        "title": "See Every Detail",
+        "subtitle": "A clean, native interface designed to stay out of your way while keeping everything visible at a glance.",
+        "pill1": "⚡ Real-time frequency",
+        "pill2": "🔒 Polkit secured",
+        "pill3": "🎨 libadwaita native",
+        "windowLabel": "CPU Governor — Screenshot"
+    },
+    "tos": {
+        "title": "Terms of Service",
+        "back": "Back to home",
+        "lastUpdated": "Last updated: February 22, 2026",
+        "s1Title": "1. Acceptable Use",
+        "s1Body": "By accessing this website or using the CPU Governor software, you agree to comply with all applicable local laws and regulations. The software is provided as a utility for managing CPU frequency scaling governors on Linux systems.",
+        "s2Title": "2. Open Source License",
+        "s2Body": "CPU Governor is licensed under the GNU General Public License v3.0. You are free to use, modify, and distribute the software in accordance with the terms of this license.",
+        "s3Title": "3. Disclaimer of Warranty",
+        "s3Body": "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY.",
+        "s4Title": "4. Limitation of Liability",
+        "s4Body": "Changing CPU governors affects hardware power consumption and thermal performance. Use extreme caution when using high-performance settings on systems with limited cooling. We are not responsible for any hardware issues arising from the use of this software."
+    },
+    "privacy": {
+        "title": "Privacy Policy",
+        "back": "Back to home",
+        "lastUpdated": "Last updated: February 22, 2026",
+        "s1Title": "Overview",
+        "s1Body": "At CPU Governor, accessible from cpugov.app, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by CPU Governor and how we use it.",
+        "s2Title": "Data Collection",
+        "s2Body": "CPU Governor and its official website follow a strict no-tracking policy:",
+        "s2i1": "No Cookies:",
+        "s2i1Desc": "We do not use cookies or similar tracking technologies.",
+        "s2i2": "No Analytics:",
+        "s2i2Desc": "We do not track your behavior or hold log files of your visit.",
+        "s2i3": "No Selling Data:",
+        "s2i3Desc": "We do not sell or share any user information with third parties.",
+        "s3Title": "Infrastructure",
+        "s3Body": "Our website is deployed on Vercel. While we do not collect data, Vercel may collect standard web logs required for technical operations (e.g., IP addresses, browser type, and timestamps). These logs are not used by us for tracking or identification purposes.",
+        "s4Title": "Open Source",
+        "s4Body": "The CPU Governor application operates entirely locally on your machine. It does not send telemetry, crash reports, or usage statistics to any remote server. Your system settings stay on your system."
     },
     "parrot": {
         "title": "Built for Parrot OS",

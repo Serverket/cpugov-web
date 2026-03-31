@@ -18,7 +18,7 @@ i18n
             zh: { translation: zh },
             it: { translation: it },
         },
-        lng: 'en',
+        lng: localStorage.getItem('cpugov_lang') || 'en',
         fallbackLng: 'en',
         interpolation: { escapeValue: false },
     })

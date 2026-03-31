@@ -11,7 +11,8 @@
         "titleHighlight": "Poder de tu CPU",
         "subtitle": "Una utilidad GTK4 moderna para monitorear y cambiar gobernadores de frecuencia — rápida, segura y hermosa.",
         "downloadDeb": "Descargar .deb",
-        "viewSource": "Ver Código"
+        "viewSource": "Ver Código",
+        "windowLabel": "CPU Governor — Demo en Vivo"
     },
     "features": {
         "title": "Todo lo que Necesitas",
@@ -78,6 +79,47 @@
             "tos": "Términos de Servicio",
             "privacy": "Política de Privacidad"
         }
+    },
+    "screenshots": {
+        "badge": "En Acción",
+        "title": "Ve Cada Detalle",
+        "subtitle": "Una interfaz nativa y limpia diseñada para mantenerse fuera de tu camino mientras mantiene todo visible de un vistazo.",
+        "pill1": "⚡ Frecuencia en tiempo real",
+        "pill2": "🔒 Seguridad Polkit",
+        "pill3": "🎨 libadwaita nativo",
+        "windowLabel": "CPU Governor — Captura de pantalla"
+    },
+    "tos": {
+        "title": "Términos de Servicio",
+        "back": "Volver al inicio",
+        "lastUpdated": "Última actualización: 22 de febrero de 2026",
+        "s1Title": "1. Uso Aceptable",
+        "s1Body": "Al acceder a este sitio web o utilizar el software CPU Governor, aceptas cumplir con todas las leyes y regulaciones locales aplicables. El software se proporciona como una utilidad para gestionar los gobernadores de frecuencia de CPU en sistemas Linux.",
+        "s2Title": "2. Licencia de Código Abierto",
+        "s2Body": "CPU Governor está licenciado bajo la Licencia Pública General GNU v3.0. Eres libre de usar, modificar y distribuir el software de acuerdo con los términos de esta licencia.",
+        "s3Title": "3. Exclusión de Garantías",
+        "s3Body": "EL SOFTWARE SE PROPORCIONA \"TAL CUAL\", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O IMPLÍCITA, INCLUYENDO PERO NO LIMITADA A GARANTÍAS DE COMERCIABILIDAD, IDONEIDAD PARA UN FIN PARTICULAR Y NO INFRACCIÓN. EN NINGÚN CASO LOS AUTORES SERÁN RESPONSABLES DE NINGUNA RECLAMACIÓN, DAÑO U OTRA RESPONSABILIDAD.",
+        "s4Title": "4. Limitación de Responsabilidad",
+        "s4Body": "Cambiar los gobernadores de CPU afecta el consumo de energía y el rendimiento térmico del hardware. Utiliza con extrema precaución los modos de alto rendimiento en sistemas con refrigeración limitada. No nos hacemos responsables de ningún problema de hardware derivado del uso de este software."
+    },
+    "privacy": {
+        "title": "Política de Privacidad",
+        "back": "Volver al inicio",
+        "lastUpdated": "Última actualización: 22 de febrero de 2026",
+        "s1Title": "Descripción General",
+        "s1Body": "En CPU Governor, accesible desde cpugov.app, una de nuestras principales prioridades es la privacidad de nuestros visitantes. Este documento de Política de Privacidad contiene los tipos de información que CPU Governor recopila y cómo la utilizamos.",
+        "s2Title": "Recopilación de Datos",
+        "s2Body": "CPU Governor y su sitio web oficial siguen una estricta política de no rastreo:",
+        "s2i1": "Sin Cookies:",
+        "s2i1Desc": "No utilizamos cookies ni tecnologías de seguimiento similares.",
+        "s2i2": "Sin Analíticas:",
+        "s2i2Desc": "No rastreamos tu comportamiento ni guardamos registros de tu visita.",
+        "s2i3": "Sin Venta de Datos:",
+        "s2i3Desc": "No vendemos ni compartimos información de usuarios con terceros.",
+        "s3Title": "Infraestructura",
+        "s3Body": "Nuestro sitio web está alojado en Vercel. Aunque nosotros no recopilamos datos, Vercel puede recopilar registros web estándar necesarios para operaciones técnicas (p.ej., direcciones IP, tipo de navegador y marcas de tiempo). Nosotros no usamos estos registros para rastreo o identificación.",
+        "s4Title": "Código Abierto",
+        "s4Body": "La aplicación CPU Governor funciona completamente de forma local en tu máquina. No envía telemetría, informes de errores ni estadísticas de uso a ningún servidor remoto. Tu configuración del sistema permanece en tu sistema."
     },
     "parrot": {
         "title": "Hecho para Parrot OS",

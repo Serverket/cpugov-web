@@ -1,10 +1,51 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import React, { useState, useEffect } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 
 const SCREENSHOT_URL =
     'https://raw.githubusercontent.com/Serverket/cpugov/refs/heads/master/screenshots/main-window.png'
+const CACHE_KEY = 'cpugov_screenshot_v1'
+
+function useScreenshotCache() {
+    const [src, setSrc] = useState(() => localStorage.getItem(CACHE_KEY) || null)
+    const [loaded, setLoaded] = useState(false)
+
+    useEffect(() => {
+        if (src) { setLoaded(true); return }
+        fetch(SCREENSHOT_URL)
+            .then(r => r.blob())
+            .then(blob => new Promise((res, rej) => {
+                const reader = new FileReader()
+                reader.onload = () => res(reader.result)
+                reader.onerror = rej
+                reader.readAsDataURL(blob)
+            }))
+            .then(dataUrl => {
+                try { localStorage.setItem(CACHE_KEY, dataUrl) } catch (_) {}
+                setSrc(dataUrl)
+                setLoaded(true)
+            })
+            .catch(() => {
+                setSrc(SCREENSHOT_URL)
+                setLoaded(true)
+            })
+    }, [])
+
+    return { src, loaded }
+}
+
+function SkeletonShimmer() {
+    return (
+        <div className="w-full aspect-[4/3] relative overflow-hidden bg-white/5">
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent to-transparent -translate-x-full animate-shimmer via-white/10" />
+        </div>
+    )
+}
 
 export default function Screenshots() {
+    const { t } = useTranslation()
+    const { src, loaded } = useScreenshotCache()
+
     return (
         <section id="screenshots" className="overflow-hidden relative px-6 py-24">
             <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent to-transparent via-brand-500/40" />
@@ -21,24 +62,24 @@ export default function Screenshots() {
                         transition={{ duration: 0.6 }}
                         className="flex-1 text-center lg:text-left"
                     >
-                        <p className="mb-3 text-sm font-semibold tracking-wider uppercase text-brand-400">In Action</p>
+                        <p className="mb-3 text-sm font-semibold tracking-wider uppercase text-brand-400">{t('screenshots.badge')}</p>
                         <h2 className="mb-5 text-4xl font-bold tracking-tight sm:text-5xl">
-                            See Every<br className="hidden lg:block" /> Detail
+                            {t('screenshots.title')}
                         </h2>
                         <p className="mx-auto max-w-md text-lg leading-relaxed text-white/50 lg:mx-0">
-                            A clean, native interface designed to stay out of your way while keeping everything visible at a glance.
+                            {t('screenshots.subtitle')}
                         </p>
 
                         {/* Feature pills */}
                         <div className="flex flex-wrap gap-3 justify-center mt-8 lg:justify-start">
                             <span className="px-4 py-2 text-sm font-medium rounded-full border glass border-brand-500/30 text-brand-300">
-                                ⚡ Real-time frequency
+                                {t('screenshots.pill1')}
                             </span>
                             <span className="px-4 py-2 text-sm font-medium rounded-full border glass border-electric-500/30 text-electric-300">
-                                🔒 Polkit secured
+                                {t('screenshots.pill2')}
                             </span>
                             <span className="px-4 py-2 text-sm font-medium rounded-full border glass border-white/10 text-white/60">
-                                🎨 libadwaita native
+                                {t('screenshots.pill3')}
                             </span>
                         </div>
                     </motion.div>
@@ -62,14 +103,25 @@ export default function Screenshots() {
                                 <span className="w-2.5 h-2.5 rounded-full bg-red-500/70" />
                                 <span className="w-2.5 h-2.5 rounded-full bg-yellow-500/70" />
                                 <span className="w-2.5 h-2.5 rounded-full bg-green-500/70" />
-                                <span className="ml-3 text-xs font-medium text-white/40">CPU Governor</span>
+                                <span className="ml-3 text-xs font-medium text-white/40">{t('screenshots.windowLabel')}</span>
                             </div>
-                            <img
-                                src={SCREENSHOT_URL}
-                                alt="CPU Governor main window"
-                                className="block w-full h-auto"
-                                loading="lazy"
-                            />
+                            <AnimatePresence mode="wait">
+                                {!loaded ? (
+                                    <motion.div key="skeleton" initial={{ opacity: 1 }} exit={{ opacity: 0 }}>
+                                        <SkeletonShimmer />
+                                    </motion.div>
+                                ) : (
+                                    <motion.img
+                                        key="image"
+                                        src={src}
+                                        alt="CPU Governor main window"
+                                        className="block w-full h-auto"
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        transition={{ duration: 0.5 }}
+                                    />
+                                )}
+                            </AnimatePresence>
                         </div>
                     </motion.div>
 

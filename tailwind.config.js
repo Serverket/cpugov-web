@@ -26,6 +26,15 @@ export default {
           600: '#0284c7',
         },
       },
+      keyframes: {
+        shimmer: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(100%)' },
+        },
+      },
+      animation: {
+        shimmer: 'shimmer 1.6s infinite',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'hero-glow': 'radial-gradient(ellipse 80% 60% at 50% -20%, rgba(99,102,241,0.35) 0%, transparent 60%)',

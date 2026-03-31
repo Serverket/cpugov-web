@@ -2,8 +2,11 @@ import React, { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { FileText, ArrowLeft } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 export default function TermsOfService() {
+    const { t } = useTranslation()
+
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
@@ -13,7 +16,7 @@ export default function TermsOfService() {
             <div className="max-w-3xl mx-auto">
                 <Link to="/" className="inline-flex items-center gap-2 text-brand-400 hover:text-brand-300 transition-colors mb-12 group">
                     <ArrowLeft size={18} className="translate-x-0 group-hover:-translate-x-1 transition-transform" />
-                    Back to home
+                    {t('tos.back')}
                 </Link>
 
                 <motion.div
@@ -25,46 +28,32 @@ export default function TermsOfService() {
                         <div className="w-12 h-12 rounded-2xl bg-brand-500/10 flex items-center justify-center text-brand-400">
                             <FileText size={24} />
                         </div>
-                        <h1 className="text-4xl font-bold text-white">Terms of Service</h1>
+                        <h1 className="text-4xl font-bold text-white">{t('tos.title')}</h1>
                     </div>
 
                     <div className="space-y-8 leading-relaxed">
                         <section>
-                            <h2 className="text-xl font-bold text-white mb-4">1. Acceptable Use</h2>
-                            <p>
-                                By accessing this website or using the CPU Governor software, you agree to comply with all applicable local laws
-                                and regulations. The software is provided as a utility for managing CPU frequency scaling governors on Linux systems.
-                            </p>
+                            <h2 className="text-xl font-bold text-white mb-4">{t('tos.s1Title')}</h2>
+                            <p>{t('tos.s1Body')}</p>
                         </section>
 
                         <section>
-                            <h2 className="text-xl font-bold text-white mb-4">2. Open Source License</h2>
-                            <p>
-                                CPU Governor is licensed under the <strong>GNU General Public License v3.0</strong>. You are free to use,
-                                modify, and distribute the software in accordance with the terms of this license.
-                            </p>
+                            <h2 className="text-xl font-bold text-white mb-4">{t('tos.s2Title')}</h2>
+                            <p>{t('tos.s2Body')}</p>
                         </section>
 
                         <section>
-                            <h2 className="text-xl font-bold text-white mb-4">3. Disclaimer of Warranty</h2>
-                            <p>
-                                THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
-                                TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-                                AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY.
-                            </p>
+                            <h2 className="text-xl font-bold text-white mb-4">{t('tos.s3Title')}</h2>
+                            <p>{t('tos.s3Body')}</p>
                         </section>
 
                         <section>
-                            <h2 className="text-xl font-bold text-white mb-4">4. Limitation of Liability</h2>
-                            <p>
-                                Changing CPU governors affects hardware power consumption and thermal performance. Use extreme caution when
-                                using high-performance settings on systems with limited cooling. We are not responsible for any hardware
-                                issues arising from the use of this software.
-                            </p>
+                            <h2 className="text-xl font-bold text-white mb-4">{t('tos.s4Title')}</h2>
+                            <p>{t('tos.s4Body')}</p>
                         </section>
 
                         <footer className="pt-12 border-t border-white/10 text-sm text-white/40">
-                            Last updated: February 22, 2026
+                            {t('tos.lastUpdated')}
                         </footer>
                     </div>
                 </motion.div>

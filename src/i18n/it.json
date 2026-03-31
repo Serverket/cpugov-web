@@ -11,7 +11,8 @@
         "titleHighlight": "Potenza della CPU",
         "subtitle": "Un moderno strumento GTK4 per monitorare e cambiare i governor della frequenza CPU — veloce, sicuro e bello.",
         "downloadDeb": "Scarica .deb",
-        "viewSource": "Vedi il Codice"
+        "viewSource": "Vedi Sorgente",
+        "windowLabel": "CPU Governor — Demo dal Vivo"
     },
     "features": {
         "title": "Tutto ciò di cui Hai Bisogno",
@@ -78,6 +79,47 @@
             "tos": "Termini di Servizio",
             "privacy": "Informativa sulla Privacy"
         }
+    },
+    "screenshots": {
+        "badge": "In Azione",
+        "title": "Ogni Dettaglio",
+        "subtitle": "Un'interfaccia nativa e pulita progettata per restare in secondo piano mantenendo tutto visibile a colpo d'occhio.",
+        "pill1": "⚡ Frequenza in tempo reale",
+        "pill2": "🔒 Protetto da Polkit",
+        "pill3": "🎨 libadwaita nativo",
+        "windowLabel": "CPU Governor — Schermata"
+    },
+    "tos": {
+        "title": "Termini di Servizio",
+        "back": "Torna alla home",
+        "lastUpdated": "Ultimo aggiornamento: 22 febbraio 2026",
+        "s1Title": "1. Uso Accettabile",
+        "s1Body": "Accedendo a questo sito web o utilizzando il software CPU Governor, accetti di rispettare tutte le leggi e regolamenti locali applicabili. Il software è fornito come utilità per la gestione dei governor di frequenza CPU su sistemi Linux.",
+        "s2Title": "2. Licenza Open Source",
+        "s2Body": "CPU Governor è concesso in licenza sotto la GNU General Public License v3.0. Sei libero di utilizzare, modificare e distribuire il software in conformità con i termini di questa licenza.",
+        "s3Title": "3. Esclusione di Garanzia",
+        "s3Body": "IL SOFTWARE È FORNITO \"COSÌ COM'È\", SENZA GARANZIE DI ALCUN TIPO, ESPRESSE O IMPLICITE, INCLUSE MA NON LIMITATE ALLE GARANZIE DI COMMERCIABILITÀ, IDONEITÀ PER UNO SCOPO PARTICULAR E NON VIOLAZIONE. IN NESSUN CASO GLI AUTORI SARANNO RESPONSABILI DI QUALSIASI RECLAMO, DANNO O ALTRA RESPONSABILITÀ.",
+        "s4Title": "4. Limitazione di Responsabilità",
+        "s4Body": "Modificare i governor della CPU influisce sul consumo energetico e sulle prestazioni termiche dell'hardware. Usa estrema cautela con le impostazioni ad alte prestazioni su sistemi con raffreddamento limitato. Non siamo responsabili per eventuali problemi hardware derivanti dall'uso di questo software."
+    },
+    "privacy": {
+        "title": "Informativa sulla Privacy",
+        "back": "Torna alla home",
+        "lastUpdated": "Ultimo aggiornamento: 22 febbraio 2026",
+        "s1Title": "Panoramica",
+        "s1Body": "Su CPU Governor, accessibile da cpugov.app, una delle nostre principali priorità è la privacy dei visitatori. Questo documento spiega quali informazioni vengono raccolte da CPU Governor e come vengono utilizzate.",
+        "s2Title": "Raccolta Dati",
+        "s2Body": "CPU Governor e il suo sito web ufficiale seguono una rigorosa politica di non tracciamento:",
+        "s2i1": "Nessun Cookie:",
+        "s2i1Desc": "Non utilizziamo cookie né tecnologie di tracciamento simili.",
+        "s2i2": "Nessuna Analisi:",
+        "s2i2Desc": "Non tracciamo il tuo comportamento né conserviamo log della tua visita.",
+        "s2i3": "Nessuna Vendita di Dati:",
+        "s2i3Desc": "Non vendiamo né condividiamo informazioni degli utenti con terze parti.",
+        "s3Title": "Infrastruttura",
+        "s3Body": "Il nostro sito web è distribuito su Vercel. Pur non raccogliendo dati, Vercel potrebbe raccogliere log web standard necessari per operazioni tecniche (es. indirizzi IP, tipo di browser e timestamp). Questi log non vengono utilizzati da noi per tracciamento o identificazione.",
+        "s4Title": "Open Source",
+        "s4Body": "L'applicazione CPU Governor opera interamente in locale sul tuo computer. Non invia telemetria, report di crash o statistiche di utilizzo a nessun server remoto. Le impostazioni di sistema rimangono sul tuo sistema."
     },
     "parrot": {
         "title": "Creato per Parrot OS",

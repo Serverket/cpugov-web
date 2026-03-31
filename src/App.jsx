@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './i18n/config'
+import i18n from './i18n/config'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Features from './components/Features'
@@ -27,6 +28,13 @@ function LandingPage() {
 }
 
 export default function App() {
+  useEffect(() => {
+    const update = (lng) => document.documentElement.setAttribute('lang', lng)
+    update(i18n.language)
+    i18n.on('languageChanged', update)
+    return () => i18n.off('languageChanged', update)
+  }, [])
+
   return (
     <BrowserRouter>
       <div className="font-sans min-h-screen bg-[#0a0a0f] text-white overflow-x-hidden">
